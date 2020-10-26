@@ -14,7 +14,8 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@master
       env:
         ACCESS_TOKEN: ${{ secrets.TEST_A_B }}
-        BRANCH: gh-pages
+        BRANCH: master
         FOLDER: build
         BUILD_SCRIPT: npm install && npm run build
+        TARGET_FOLDER: github-actions-demo
 
